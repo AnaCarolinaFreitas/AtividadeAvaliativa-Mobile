@@ -12,7 +12,8 @@ export default function Ana01() {
         <Image source={require("../assets/usericon.png")} style={styles.imagem}/>
          <Text style={styles.text}>Ana Carolina Garcia Freitas 2TDS1</Text>
         </View>
-        <ScrollView style={styles.scrollContainer}
+        <ScrollView style={{backgroundColor: 'blue', height: 5, }}
+        horizontal={true}
         horizontalshowsHorizontalScrollIndicator={true}
         keyExtractor={(item) => item.id }
         renderItem={({ item}) => (
@@ -23,19 +24,24 @@ export default function Ana01() {
         />
 
         <View style={styles.content}>
-            <CardText texto=" This is an example of a text that would fit in this card" />
+            <Text>This is an exemple of a text</Text>
+        </View> 
 
-            <Image source={require("../assets/image1Ana.jpg")} style={styles.imageContent}/>
-
-            <CardText texto="This is the second card, we can insert any text that we want here" />
+        <View style={styles.contentImage}>
+            <Image source={require("../assets/image1Ana.jpg")} styles={{}}/>
         </View>
+
+        <View style={styles.content}>
+            <Text>This is an exemple of a text</Text>
+        </View> 
         </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        alignItems: 'center'
     },
     text: {
         fontFamily: "sans-serif",
@@ -59,11 +65,20 @@ const styles = StyleSheet.create({
     },
 
     content: {
-        flexDirection: 'column',
-        alignItems: 'center'
-    },
+        backgroundColor: 'white',
+        width: 300,
+        height: 80,
+        borderRadius: 10,
+        margin: 10,
+        padding: 20
+       },
 
-    imageContent: {
+       contentImage: {
+        width: 100,
+        height: 100,
+        borderRadius: 10
+       },
+    imagem1: {
         width: 100,
         height: 100
     }

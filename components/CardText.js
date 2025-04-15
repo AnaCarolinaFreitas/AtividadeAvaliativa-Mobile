@@ -1,10 +1,10 @@
 import React from "react";
 import {View, StyleSheet, Text} from "react-native";
 
-export default function CardText(texto) {
+export default function CardText(text) {
     return (
         <View style={styles.card}>
-            <Text style={styles.text}>{texto}</Text>
+            <Text style={styles.text}>{text}</Text>
         </View>
     )
 }
