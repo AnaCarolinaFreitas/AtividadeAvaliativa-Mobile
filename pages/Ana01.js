@@ -28,7 +28,7 @@ export default function Ana01() {
         </View> 
 
         <View style={styles.contentImage}>
-            <Image source={require("../assets/image1Ana.jpg")} styles={{}}/>
+            <Image source={require("../assets/image1Ana.jpg")} styles={styles.imagem1}/>
         </View>
 
         <View style={styles.content}>
