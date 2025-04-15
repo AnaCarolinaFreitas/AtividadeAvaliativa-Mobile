@@ -1,9 +1,8 @@
+
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
-
-import { StyleSheet } from "react-native";
 
 import Carlos01 from "./pages/Carlos01";
 import Carlos02 from "./pages/Carlos02";
