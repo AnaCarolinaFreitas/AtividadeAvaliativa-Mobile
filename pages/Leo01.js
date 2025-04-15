@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, SafeAreaView, ScrollView, View} from "react-native";
 import Button from "./components/Button"
 import Button2 from "./components/Button2"
-import Card from "./components/Card"
+import Card1 from "./components/Card1"
 import Card2 from "./components/Card2"
 
 
@@ -16,7 +16,7 @@ export default function Home() {
         <Card2/>
         <Card2/>
           </View>
-          <Card/>
+          <Card1/>
        <Button2/>
         </ScrollView>
       </SafeAreaView>
