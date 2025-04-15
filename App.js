@@ -15,7 +15,6 @@ import Leo02 from "./pages/Leo02";
 import Luiz01 from "./pages/Luiz01";
 import Luiz02 from "./pages/Luiz02";
 
-
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigator () {
