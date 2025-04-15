@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
-import Bloco from "./components/Block";
-import Card from "./components/Card"
-import Input from "./components/Input"
+import Bloco from "../components/Block";
+import Card from "../components/Card3"
+import Input from "../components/Input"
 
 export default function Home() {
   return (
@@ -26,10 +26,10 @@ export default function Home() {
         <Card />
         <Card />
         <View style={styles.bolas}>
-      <Image source={require("./assets/bola.png")} style={styles.icon}></Image>
-      <Image source={require("./assets/bola.png")} style={styles.icon}></Image>
-      <Image source={require("./assets/bola.png")} style={styles.icon}></Image>
-      <Image source={require("./assets/bola.png")} style={styles.icon}></Image>
+      <Image source={require("../assets/bola.png")} style={styles.icon}></Image>
+      <Image source={require("../assets/bola.png")} style={styles.icon}></Image>
+      <Image source={require("../assets/bola.png")} style={styles.icon}></Image>
+      <Image source={require("../assets/bola.png")} style={styles.icon}></Image>
       </View>
       </View>
       
