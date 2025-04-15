@@ -4,8 +4,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-import Cadu01 from "./pages/Cadu01";
-import Cadu02 from "./pages/Cadu02";
+import Carlos01 from "./pages/Carlos01";
+import Carlos02 from "./pages/Carlos02";
 import Ana01 from "./pages/Ana01";
 import Ana02 from "./pages/Ana02";
 import Joao01 from "./pages/Joao01";
@@ -20,11 +20,11 @@ const Tab = createBottomTabNavigator();
 
 export default function TabNavigator () {
   return (
-    <NavigationContainer>
-      <Tab.Navigator initialRouteName="Cadu01">
-        <Tab.Screen name="Cadu01" component={Cadu01} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
+    <NavigationContainer styles={styles.container}>
+      <Tab.Navigator initialRouteName="Carlos01">
+        <Tab.Screen name="Carlos01" component={Carlos01} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
         )}} />
-        <Tab.Screen name="Cadu02" component={Cadu02} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
+        <Tab.Screen name="Carlos02" component={Carlos02} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
         )}} />
         <Tab.Screen name="Ana01" component={Ana01} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
         )}} />
@@ -46,4 +46,3 @@ export default function TabNavigator () {
     </NavigationContainer>
   );
 }
- 
