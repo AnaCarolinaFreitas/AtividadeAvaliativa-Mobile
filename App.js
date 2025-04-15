@@ -1,3 +1,4 @@
+
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
@@ -21,7 +22,7 @@ export default function TabNavigator () {
   return (
     <NavigationContainer>
       <Tab.Navigator initialRouteName="Cadu01">
-        <Tab.Screen name="Cadu01" component={Cadu01} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size{size} />
+        <Tab.Screen name="Cadu01" component={Cadu01} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
         )}} />
         <Tab.Screen name="Cadu02" component={Cadu02} options={{ tabBarIcon: ({ color, size}) => ( <Icon name="home" color={color} size={size} />
         )}} />
