@@ -1,11 +1,23 @@
 import React from "react";
-import { StyleSheet, Text, SafeAreaView, ScrollView} from "react-native";
+import { StyleSheet, SafeAreaView, ScrollView, View} from "react-native";
+import Button from "./components/Button"
+import Button2 from "./components/Button2"
+import Card from "./components/Card"
+import Card2 from "./components/Card2"
 
-export default function Tela3() {
+
+export default function Home() {
     return (
-      <SafeAreaView style={Styles.container}>
+      <SafeAreaView style={styles.container}>
         <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
-        <Text style={styles.mainTitle}>Teste01</Text>
+        <Button/>
+        <View style={styles.div}>
+          <Card2/>
+        <Card2/>
+        <Card2/>
+          </View>
+          <Card/>
+       <Button2/>
         </ScrollView>
       </SafeAreaView>
     )
@@ -14,13 +26,19 @@ export default function Tela3() {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "black"
+        backgroundColor: "white"
     },
+    div: {
+      display: "flex",
+      flexDirection: "row"
+    },
+
     scrollView:{
-        padding: 16
+        padding: 20
     },
     mainTitle: {
         fontSize: 24,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        color: "white"
     }
 })
