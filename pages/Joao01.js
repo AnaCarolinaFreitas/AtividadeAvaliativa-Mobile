@@ -1,4 +1,5 @@
 import React from "react";
+
 import { StyleSheet, ScrollView, SafeAreaView, Image, View } from "react-native";
 import Bloco from "../components/Block"
 import Card from "../components/Card"
